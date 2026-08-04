@@ -93,14 +93,11 @@
       overflow: hidden;
     }
 
-    .mark::after {
-      content: "";
-      position: absolute;
-      inset: 8px;
-      border: 2px solid rgba(5,7,11,0.9);
-      border-radius: 10px;
-      transform: rotate(45deg);
-      opacity: 0.9;
+    .logo {
+        width: 32px;
+        height: 32px;
+        display: block;
+        flex-shrink: 0;
     }
 
     .nav-links {
@@ -426,8 +423,8 @@
   <header class="nav">
     <div class="nav-inner">
       <a class="brand" href="#top" aria-label="Xeoxing home">
-        <span class="mark" aria-hidden="true"></span>
-        <span>Xeoxing</span>
+          <img src="logo.svg" alt="Xeoxing Logo" class="logo">
+          <span>Xeoxing</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
